@@ -1,12 +1,12 @@
-export const THEME_CONFIG: App.Locals['config'] = {
+export const THEME_CONFIG: App.Locals["config"] = {
   /** blog title */
-  title: "小孙同学",
+  title: "宋玉の世界",
   /** your name */
-  author: "Guoqi Sun",
+  author: "XingGuo Song",
   /** website description */
-  desc: "热爱可抵岁月漫长",
+  desc: "爱技术，也爱生活！",
   /** your deployed domain */
-  website: "https://blog.sunguoqi.com",
+  website: "https://blog.songxingguo.com",
   /** your locale */
   locale: "zh-cn",
   /** theme style */
@@ -14,12 +14,8 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your socials */
   socials: [
     {
-      name: "twitter",
-      href: "https://twitter.com/sun0225SUN",
-    },
-    {
       name: "github",
-      href: "https://github.com/sun0225SUN",
+      href: "https://github.com/songxingguo",
     },
     {
       name: "rss",
@@ -28,7 +24,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   ],
   /** your header info */
   header: {
-    twitter: "@sun0225SUN",
+    twitter: "@songxingguo",
   },
   /** your navigation links */
   navs: [
@@ -42,27 +38,21 @@ export const THEME_CONFIG: App.Locals['config'] = {
     },
     {
       name: "Categories",
-      href: "/categories"
+      href: "/categories",
     },
     {
       name: "Albums",
-      href: "https://gallery.sunguoqi.com"
+      href: "https://gallery.songxingguo.com",
     },
     {
       name: "Bicycle",
-      href: "https://bicycling.sunguoqi.com"
-    },
-    {
-      name: "Links",
-      href: "/links"
+      href: "https://bicycling.songxingguo.com",
     },
     {
       name: "About",
-      href: "/about",
+      href: "https://resume.songxingguo.com",
     },
   ],
   /** your category name mapping, which the `path` will be shown in the url */
-  category_map: [
-  ]
-}
-
+  category_map: [],
+};
