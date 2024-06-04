@@ -126,114 +126,23 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"posts": {
-"2021.md": {
-	id: "2021.md";
-  slug: "2021";
+"从零开始搭建在线个人简历.md": {
+	id: "从零开始搭建在线个人简历.md";
+  slug: "从零开始搭建在线个人简历";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"2022.md": {
-	id: "2022.md";
-  slug: "2022";
+"使用Github Action部署静态网站.md": {
+	id: "使用Github Action部署静态网站.md";
+  slug: "使用github-action部署静态网站";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"2023.md": {
-	id: "2023.md";
-  slug: "2023";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"21.md": {
-	id: "21.md";
-  slug: "21";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"22.md": {
-	id: "22.md";
-  slug: "22";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"blogger.md": {
-	id: "blogger.md";
-  slug: "blogger";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"brain.md": {
-	id: "brain.md";
-  slug: "brain";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"chatGPT.md": {
-	id: "chatGPT.md";
-  slug: "chatgpt";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"github.md": {
-	id: "github.md";
-  slug: "github";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"kunlunchao.md": {
-	id: "kunlunchao.md";
-  slug: "kunlunchao";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"oh-my-posh.md": {
-	id: "oh-my-posh.md";
-  slug: "oh-my-posh";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"post-pic.md": {
-	id: "post-pic.md";
-  slug: "post-pic";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"start.md": {
-	id: "start.md";
-  slug: "start";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"xizang.md": {
-	id: "xizang.md";
-  slug: "xizang";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"yuanze.md": {
-	id: "yuanze.md";
-  slug: "yuanze";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"zhuhai.md": {
-	id: "zhuhai.md";
-  slug: "zhuhai";
+"如何将语雀文章发布到Hexo博客.md": {
+	id: "如何将语雀文章发布到Hexo博客.md";
+  slug: "如何将语雀文章发布到hexo博客";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
