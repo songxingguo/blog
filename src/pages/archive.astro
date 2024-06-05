@@ -1,21 +1,20 @@
 ---
-import LayoutDefault from '~/layouts/LayoutDefault.astro'
-import ListSection from '~/components/ListSection.astro'
-import ListItem from '~/components/ListItem.astro'
-import { getPosts, formatDate } from '~/utils'
+import LayoutDefault from "~/layouts/LayoutDefault.astro";
+import ListSection from "~/components/ListSection.astro";
+import ListItem from "~/components/ListItem.astro";
+import { getPosts, formatDate } from "~/utils";
 
-const posts = await getPosts()
+const posts = await getPosts();
 
-const postByYear = new Map<number, Post[]>()
+const postByYear = new Map<number, Post[]>();
 posts.forEach((post: Post) => {
-  const pubDate = post.data.pubDate ?? new Date()
-  const year = pubDate.getFullYear()
+  const pubDate = post.data.date ?? new Date();
+  const year = pubDate.getFullYear();
   if (!postByYear.has(year)) {
-    postByYear.set(year, [])
+    postByYear.set(year, []);
   }
-  postByYear.get(year)!.push(post)
-})
-
+  postByYear.get(year)!.push(post);
+});
 ---
 
 <LayoutDefault>
@@ -24,7 +23,11 @@ posts.forEach((post: Post) => {
       Array.from(postByYear.entries()).map(([year, posts]) => (
         <ListSection title={year}>
           {posts.map((post) => (
-            <ListItem title={post.data.title} href={`/posts/${post.slug}/`} description={formatDate(post.data.pubDate)} />
+            <ListItem
+              title={post.data.title}
+              href={`/posts/${post.slug}/`}
+              description={formatDate(post.data.date)}
+            />
           ))}
         </ListSection>
       ))

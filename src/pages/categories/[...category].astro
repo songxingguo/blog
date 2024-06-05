@@ -27,7 +27,7 @@ const { name } = Astro.params;
         <ListItem
           title={post.data.title}
           href={`/posts/${post.slug}/`}
-          description={formatDate(post.data.pubDate)}
+          description={formatDate(post.data.date)}
         />
       ))
     }
