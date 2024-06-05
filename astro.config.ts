@@ -1,8 +1,9 @@
-import { defineConfig } from 'astro/config';
-import UnoCSS from 'unocss/astro';
+import { defineConfig } from "astro/config";
+import UnoCSS from "unocss/astro";
 import { THEME_CONFIG } from "./src/theme.config";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
+import remarkToc from "remark-toc";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +13,7 @@ export default defineConfig({
     shikiConfig: {
       // Use build-in Shiki theme
       // https://github.com/shikijs/shiki/blob/main/docs/themes.md
-      theme: 'one-dark-pro',
+      theme: "one-dark-pro",
       // Or visit here for more themes
       // https://shikiji.netlify.app/guide/dual-themes#light-dark-dual-themes
       // experimentalThemes: {
@@ -26,12 +27,14 @@ export default defineConfig({
       // auto wrap for better display
       wrap: true,
     },
+    remarkPlugins: [remarkToc],
+    gfm: false,
   },
   integrations: [
     UnoCSS({
-      injectReset: true
+      injectReset: true,
     }),
     robotsTxt(),
-    sitemap()
-  ]
+    sitemap(),
+  ],
 });
