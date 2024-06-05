@@ -140,6 +140,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"多媒体前端手册.md": {
+	id: "多媒体前端手册.md";
+  slug: "多媒体前端手册";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "如何将语雀文章发布到Hexo博客.md": {
 	id: "如何将语雀文章发布到Hexo博客.md";
   slug: "如何将语雀文章发布到hexo博客";

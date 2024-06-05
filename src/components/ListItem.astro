@@ -4,15 +4,14 @@ interface Props {
   href: string;
   title?: string;
   description?: string;
-  original?: string;
-  originalPath?: string;
+  originalUrl?: string;
 }
-const { href, title, description, original, originalPath } = Astro.props;
+const { href, title, description, originalUrl } = Astro.props;
 ---
 
 <li un-flex="~ col gap-1 items-start">
   <h3 class="post-title!">
-    <Link href={href} original={original} originalPath={originalPath}>
+    <Link href={href} originalUrl={originalUrl}>
       {title}
     </Link>
   </h3>

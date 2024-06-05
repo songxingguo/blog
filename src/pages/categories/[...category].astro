@@ -28,8 +28,7 @@ const { name } = Astro.params;
           title={post.data.title}
           href={`/posts/${post.slug}/`}
           description={formatDate(post.data.date)}
-          original={post.data.original}
-          originalPath={post.data.originalPath}
+          originalUrl={post.data.originalUrl}
         />
       ))
     }

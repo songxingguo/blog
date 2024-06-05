@@ -1,13 +1,12 @@
 ---
 interface Props {
   href: string;
-  original?: string;
-  originalPath?: string;
+  originalUrl?: string;
 }
-const { href, original, originalPath } = Astro.props;
-const url = !original
-  ? href
-  : `https://${original}.songxingguo.com/${originalPath}`;
+const { href, originalUrl } = Astro.props;
+const host = originalUrl?.split("/")[2] || ""; // 获取域名地址
+const original = host.split(".").slice(0, -2).join("."); //获取子域名
+const url = !original ? href : originalUrl;
 ---
 
 <a href={url}

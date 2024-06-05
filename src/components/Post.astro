@@ -11,11 +11,7 @@ const { translate: t } = Astro.locals;
 <article class="heti">
   <header>
     <h1 class="post-title!">
-      <Link
-        href=`/posts/${post.slug}/`
-        original={post.data.original}
-        originalPath={post.data.originalPath}
-      >
+      <Link href=`/posts/${post.slug}/` originalUrl={post.data.originalUrl}>
         {post.data.title}
       </Link>
     </h1>

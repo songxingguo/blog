@@ -20,8 +20,7 @@ const posts = defineCollection({
       enclosure: z.optional(
         z.object({ url: z.string(), length: z.number(), type: z.string() })
       ),
-      original: z.string().optional(),
-      originalPath: z.string().optional(),
+      originalUrl: z.string().optional(),
     }),
 });
 
