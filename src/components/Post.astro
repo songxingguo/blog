@@ -13,9 +13,26 @@ const url = !post.data.original
 <article class="heti">
   <header>
     <h1 class="post-title!">
-      <a href={url}>{post.data.title}</a>
-      {post.data.original == "garden" && <span>🌱</span>}
-      {post.data.original == "brain" && <span>🧠</span>}
+      <a href={url}
+        >{post.data.title}
+        {
+          post.data.original == "garden" && (
+            <span
+              class="hint--top hint--success"
+              aria-label="点击进入数字花园～"
+            >
+              🌱
+            </span>
+          )
+        }
+        {
+          post.data.original == "brain" && (
+            <span class="hint--top hint--error" aria-label="点击进入第二大脑～">
+              🧠
+            </span>
+          )
+        }</a
+      >
     </h1>
     <div class="mt-2 text-3.5">
       <span>{t("posted_at")}</span>
