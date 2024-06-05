@@ -1,38 +1,23 @@
 ---
 import { formatDate } from "~/utils";
+import Link from "~/components/Link.astro";
 interface Props {
   post: Post;
 }
 const { post } = Astro.props;
 const { translate: t } = Astro.locals;
-const url = !post.data.original
-  ? `/posts/${post.slug}/`
-  : `https://${post.data.original}.songxingguo.com/${post.data.originalPath}`;
 ---
 
 <article class="heti">
   <header>
     <h1 class="post-title!">
-      <a href={url}
-        >{post.data.title}
-        {
-          post.data.original == "garden" && (
-            <span
-              class="hint--top hint--success"
-              aria-label="点击进入数字花园～"
-            >
-              🌱
-            </span>
-          )
-        }
-        {
-          post.data.original == "brain" && (
-            <span class="hint--top hint--error" aria-label="点击进入第二大脑～">
-              🧠
-            </span>
-          )
-        }</a
+      <Link
+        href=`/posts/${post.slug}/`
+        original={post.data.original}
+        originalPath={post.data.originalPath}
       >
+        {post.data.title}
+      </Link>
     </h1>
     <div class="mt-2 text-3.5">
       <span>{t("posted_at")}</span>
