@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { getPosts } from "~/utils";
+import { getPosts, getPostUrl } from "~/utils";
 import { THEME_CONFIG } from "~/theme.config";
 import type { APIContext } from "astro";
 import sanitizeHtml from "sanitize-html";
@@ -17,8 +17,11 @@ export async function GET(_context: APIContext) {
     description: desc,
     site: website,
     items: posts.map((post) => {
+      const { originalUrl = "" } = post.data;
+      const href = `/posts/${post.slug}/`;
+      const { url } = getPostUrl(href, originalUrl);
       return {
-        link: `/posts/${post.slug}/`,
+        link: url,
         author: author,
         content: sanitizeHtml(parser.render(post.body), { allowedTags }),
         title: post.data.title,

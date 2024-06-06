@@ -126,30 +126,44 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"posts": {
-"从零开始搭建在线个人简历.md": {
-	id: "从零开始搭建在线个人简历.md";
-  slug: "从零开始搭建在线个人简历";
+"技术/ThreeDemo.md": {
+	id: "技术/ThreeDemo.md";
+  slug: "技术/threedemo";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"使用Github Action部署静态网站.md": {
-	id: "使用Github Action部署静态网站.md";
-  slug: "使用github-action部署静态网站";
+"技术/从零开始搭建在线个人简历.md": {
+	id: "技术/从零开始搭建在线个人简历.md";
+  slug: "技术/从零开始搭建在线个人简历";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"多媒体前端手册.md": {
-	id: "多媒体前端手册.md";
-  slug: "多媒体前端手册";
+"技术/使用Github Action部署静态网站.md": {
+	id: "技术/使用Github Action部署静态网站.md";
+  slug: "技术/使用github-action部署静态网站";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"如何将语雀文章发布到Hexo博客.md": {
-	id: "如何将语雀文章发布到Hexo博客.md";
-  slug: "如何将语雀文章发布到hexo博客";
+"技术/多媒体前端手册.md": {
+	id: "技术/多媒体前端手册.md";
+  slug: "技术/多媒体前端手册";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"技术/如何将语雀文章发布到Hexo博客.md": {
+	id: "技术/如何将语雀文章发布到Hexo博客.md";
+  slug: "技术/如何将语雀文章发布到hexo博客";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"技术/如何配置泛域名证书.md": {
+	id: "技术/如何配置泛域名证书.md";
+  slug: "技术/如何配置泛域名证书";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

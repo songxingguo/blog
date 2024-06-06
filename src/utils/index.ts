@@ -58,3 +58,10 @@ export function getPathFromCategory(
   const mappingPath = category_map.find((l) => l.name === category);
   return mappingPath ? mappingPath.path : category;
 }
+
+export function getPostUrl(href: string, originalUrl: string) {
+  const host = originalUrl?.split("/")[2] || ""; // 获取域名地址
+  const original = host.split(".").slice(0, -2).join("."); //获取子域名
+  const url = !original ? href : originalUrl;
+  return { original, url };
+}

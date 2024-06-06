@@ -1,12 +1,11 @@
 ---
+import { getPostUrl } from "~/utils";
 interface Props {
   href: string;
   originalUrl?: string;
 }
-const { href, originalUrl } = Astro.props;
-const host = originalUrl?.split("/")[2] || ""; // 获取域名地址
-const original = host.split(".").slice(0, -2).join("."); //获取子域名
-const url = !original ? href : originalUrl;
+const { href, originalUrl = "" } = Astro.props;
+const { original, url } = getPostUrl(href, originalUrl);
 ---
 
 <a href={url}
