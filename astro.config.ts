@@ -4,6 +4,7 @@ import { THEME_CONFIG } from "./src/theme.config";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import remarkToc from "remark-toc";
+import { remarkObsidianImage } from "./src/utils/remark-obsidian-image";
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,8 +28,7 @@ export default defineConfig({
       // auto wrap for better display
       wrap: true,
     },
-    remarkPlugins: [remarkToc],
-    gfm: false,
+    remarkPlugins: [remarkObsidianImage, remarkToc],
   },
   integrations: [
     UnoCSS({

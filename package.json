@@ -18,8 +18,17 @@
     "astro": "^4.5.9",
     "astro-robots-txt": "^1.0.0",
     "astro-seo": "^0.8.0",
+    "mdast-util-gfm-footnote": "^2.0.0",
+    "mdast-util-gfm-strikethrough": "^2.0.0",
+    "mdast-util-to-markdown": "^2.1.0",
+    "remark": "^15.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
     "remark-toc": "^9.0.0",
     "typescript": "^5.3.3",
+    "unified": "^11.0.4",
     "vite": "^5.0.12"
   },
   "devDependencies": {
