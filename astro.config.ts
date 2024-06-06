@@ -28,7 +28,7 @@ export default defineConfig({
       // auto wrap for better display
       wrap: true,
     },
-    remarkPlugins: [remarkObsidianImage, remarkToc],
+    remarkPlugins: [remarkObsidianImage, [remarkToc, { heading: "目录" }]],
   },
   integrations: [
     UnoCSS({
