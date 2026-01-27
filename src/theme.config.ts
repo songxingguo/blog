@@ -6,7 +6,7 @@ export const THEME_CONFIG: App.Locals["config"] = {
   /** website description */
   desc: "爱技术，也爱生活！",
   /** your deployed domain */
-  website: "https://songxingguo.com/blog",
+  website: "https://songxingguo.com",
   /** your locale */
   locale: "zh-cn",
   /** theme style */
