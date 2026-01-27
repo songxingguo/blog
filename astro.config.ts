@@ -9,6 +9,7 @@ import { remarkObsidianImage } from "./src/utils/remark-obsidian-image";
 // https://astro.build/config
 export default defineConfig({
   site: THEME_CONFIG.website,
+  base: "/blog"
   prefetch: true,
   markdown: {
     shikiConfig: {
