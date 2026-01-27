@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content";
-import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
+import sanitizeHtml from "sanitize-html";
 
 export async function getCategories() {
   const posts = await getPosts();
@@ -63,5 +63,5 @@ export function getPostUrl(href: string, originalUrl: string) {
   const host = originalUrl?.split("/")[2] || ""; // 获取域名地址
   const original = host.split(".").slice(0, -2).join("."); //获取子域名
   const url = !original ? href : originalUrl;
-  return { original, url };
+  return { original, url: `${import.meta.env.BASE_URL}${url}` };
 }

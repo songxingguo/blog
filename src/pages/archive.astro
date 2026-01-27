@@ -1,8 +1,8 @@
 ---
-import LayoutDefault from "~/layouts/LayoutDefault.astro";
-import ListSection from "~/components/ListSection.astro";
 import ListItem from "~/components/ListItem.astro";
-import { getPosts, formatDate } from "~/utils";
+import ListSection from "~/components/ListSection.astro";
+import LayoutDefault from "~/layouts/LayoutDefault.astro";
+import { formatDate, getPosts } from "~/utils";
 
 const posts = await getPosts();
 

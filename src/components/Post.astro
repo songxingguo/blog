@@ -1,6 +1,6 @@
 ---
-import { formatDate } from "~/utils";
 import Link from "~/components/Link.astro";
+import { formatDate } from "~/utils";
 interface Props {
   post: Post;
 }
@@ -21,7 +21,7 @@ const { translate: t } = Astro.locals;
       {
         post.data.categories &&
           post.data.categories.map((category) => (
-            <a class="ml-2.5" href={`/categories/${category}`}>
+            <a class="ml-2.5" href={`/blog/categories/${category}`}>
               # {category}
             </a>
           ))

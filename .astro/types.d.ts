@@ -126,44 +126,170 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"posts": {
-"技术/ThreeDemo.md": {
-	id: "技术/ThreeDemo.md";
-  slug: "技术/threedemo";
+"life/driverless.md": {
+	id: "life/driverless.md";
+  slug: "life/driverless";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"技术/从零开始搭建在线个人简历.md": {
-	id: "技术/从零开始搭建在线个人简历.md";
-  slug: "技术/从零开始搭建在线个人简历";
+"life/general-psychology.md": {
+	id: "life/general-psychology.md";
+  slug: "life/general-psychology";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"技术/使用Github Action部署静态网站.md": {
-	id: "技术/使用Github Action部署静态网站.md";
-  slug: "技术/使用github-action部署静态网站";
+"life/okrt.md": {
+	id: "life/okrt.md";
+  slug: "life/okrt";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"技术/多媒体前端手册.md": {
-	id: "技术/多媒体前端手册.md";
-  slug: "技术/多媒体前端手册";
+"life/time-wealth.md": {
+	id: "life/time-wealth.md";
+  slug: "life/time-wealth";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"技术/如何将语雀文章发布到Hexo博客.md": {
-	id: "技术/如何将语雀文章发布到Hexo博客.md";
-  slug: "技术/如何将语雀文章发布到hexo博客";
+"life/transition.md": {
+	id: "life/transition.md";
+  slug: "life/transition";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"技术/如何配置泛域名证书.md": {
-	id: "技术/如何配置泛域名证书.md";
-  slug: "技术/如何配置泛域名证书";
+"tech/2024job.md": {
+	id: "tech/2024job.md";
+  slug: "tech/2024job";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/ThreeDemo.md": {
+	id: "tech/ThreeDemo.md";
+  slug: "tech/threedemo";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/addroutes.md": {
+	id: "tech/addroutes.md";
+  slug: "tech/addroutes";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/async-validator.md": {
+	id: "tech/async-validator.md";
+  slug: "tech/async-validator";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/axios-api.md": {
+	id: "tech/axios-api.md";
+  slug: "tech/axios-api";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/axios-cache-adapter.md": {
+	id: "tech/axios-cache-adapter.md";
+  slug: "tech/axios-cache-adapter";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/big-file-upload.md": {
+	id: "tech/big-file-upload.md";
+  slug: "tech/big-file-upload";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/dev-tools.md": {
+	id: "tech/dev-tools.md";
+  slug: "tech/dev-tools";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/domain-certificate.md": {
+	id: "tech/domain-certificate.md";
+  slug: "tech/domain-certificate";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/element-custom-theme.md": {
+	id: "tech/element-custom-theme.md";
+  slug: "tech/element-custom-theme";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/github-action-deploy.md": {
+	id: "tech/github-action-deploy.md";
+  slug: "tech/github-action-deploy";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/keep-alive-page.md": {
+	id: "tech/keep-alive-page.md";
+  slug: "tech/keep-alive-page";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/multi-media-manual.md": {
+	id: "tech/multi-media-manual.md";
+  slug: "tech/multi-media-manual";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/obsidian-to-yuque.md": {
+	id: "tech/obsidian-to-yuque.md";
+  slug: "tech/obsidian-to-yuque";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/online-resume.md": {
+	id: "tech/online-resume.md";
+  slug: "tech/online-resume";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/react-three-fiber-cube.md": {
+	id: "tech/react-three-fiber-cube.md";
+  slug: "tech/react-three-fiber-cube";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/table-max-height.md": {
+	id: "tech/table-max-height.md";
+  slug: "tech/table-max-height";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/vauth.md": {
+	id: "tech/vauth.md";
+  slug: "tech/vauth";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"tech/yuque-hexo.md": {
+	id: "tech/yuque-hexo.md";
+  slug: "tech/yuque-hexo";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

@@ -1,16 +1,15 @@
+import sitemap from "@astrojs/sitemap";
+import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
+import remarkToc from "remark-toc";
 import UnoCSS from "unocss/astro";
 import { THEME_CONFIG } from "./src/theme.config";
-import robotsTxt from "astro-robots-txt";
-import sitemap from "@astrojs/sitemap";
-import remarkToc from "remark-toc";
 import { remarkObsidianImage } from "./src/utils/remark-obsidian-image";
 
 // https://astro.build/config
 export default defineConfig({
   site: THEME_CONFIG.website,
-  base: "/blog/",
-  trailingSlash: "always",
+  base: "/blog",
   prefetch: true,
   markdown: {
     shikiConfig: {
