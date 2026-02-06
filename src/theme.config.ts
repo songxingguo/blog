@@ -30,15 +30,15 @@ export const THEME_CONFIG: App.Locals["config"] = {
   navs: [
     {
       name: "Posts",
-      href: "/posts/page/1",
+      href: "/blog/posts/page/1/",
     },
     {
       name: "Archive",
-      href: "/archive",
+      href: "/blog/archive/",
     },
     {
       name: "Categories",
-      href: "/categories",
+      href: "/blog/categories/",
     },
     {
       name: "Albums",
